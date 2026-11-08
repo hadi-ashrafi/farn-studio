@@ -39,7 +39,7 @@ window.FARN_CONFIG = {
       // github: { repo: "saffron-cafe", pages: true },
       source: null,
       year: 2026,
-      accent: ["#ff6b4a", "#ffb199"],
+      accent: ["#ff7a4a", "#ff5c8a"],
       title: { en: "Saffron Café", fa: "کافه زعفران" },
       desc: {
         en: "Landing page & online menu for a specialty coffee shop — with live cart.",
@@ -53,7 +53,7 @@ window.FARN_CONFIG = {
       local: "work/demo-dashboard/index.html",
       source: null,
       year: 2026,
-      accent: ["#7c8cff", "#3dd6b5"],
+      accent: ["#8f7cff", "#6aa8ff"],
       title: { en: "Pulse Analytics", fa: "داشبورد پالس" },
       desc: {
         en: "SaaS analytics dashboard with interactive charts and dark UI.",
@@ -65,7 +65,7 @@ window.FARN_CONFIG = {
       id: "noor-brand",
       category: "brand",
       year: 2026,
-      accent: ["#ff6b4a", "#eceae4"],
+      accent: ["#ff7a4a", "#f6f4f1"],
       art: "brand1",
       title: { en: "Noor Skincare", fa: "برند نور" },
       desc: {
@@ -78,7 +78,7 @@ window.FARN_CONFIG = {
       id: "atlas-brand",
       category: "brand",
       year: 2025,
-      accent: ["#3dd6b5", "#7c8cff"],
+      accent: ["#6aa8ff", "#8f7cff"],
       art: "brand2",
       title: { en: "Atlas Travel", fa: "آژانس اطلس" },
       desc: {
@@ -91,7 +91,7 @@ window.FARN_CONFIG = {
       id: "farn-reel",
       category: "motion",
       year: 2026,
-      accent: ["#ff6b4a", "#c63a1e"],
+      accent: ["#ff7a4a", "#ff5c8a"],
       art: "motion1",
       youtubeId: null,                                 // TODO: آیدی ویدیو یوتیوب
       title: { en: "FARN Showreel", fa: "شوریل فرن" },
@@ -105,7 +105,7 @@ window.FARN_CONFIG = {
       id: "explainer",
       category: "motion",
       year: 2025,
-      accent: ["#7c8cff", "#3dd6b5"],
+      accent: ["#8f7cff", "#6aa8ff"],
       art: "motion2",
       youtubeId: null,
       title: { en: "Fintech Explainer", fa: "موشن‌گرافیک فین‌تک" },

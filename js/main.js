@@ -277,7 +277,7 @@
 
   /* ================= youtube ================= */
   function renderVideos() {
-    var cols = ["#ff8a5f", "#a594ff", "#62e3cb"];
+    var cols = ["#ff7a4a", "#8f7cff", "#ff5c8a"];
     $("#videos").innerHTML = (CFG.videos || []).map(function (v, i) {
       var href = v.id ? "https://www.youtube.com/watch?v=" + v.id : CFG.contact.youtube;
       return '<a class="vcard glass" href="' + href + '" target="_blank" rel="noopener">' +

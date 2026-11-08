@@ -17,18 +17,31 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="application-name" content="FARN Studio">
 
+  <!-- Social / search -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FARN Studio">
+  <meta property="og:title" content="FARN Studio — Design, Develop, Create">
+  <meta property="og:description" content="Full‑stack websites, brand identity and motion — in English and Persian.">
+  <meta property="og:url" content="https://hadi-ashrafi.github.io/farn-studio/">
+  <meta property="og:image" content="https://hadi-ashrafi.github.io/farn-studio/assets/brand/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://hadi-ashrafi.github.io/farn-studio/">
+  <link rel="alternate" hreflang="en" href="https://hadi-ashrafi.github.io/farn-studio/?lang=en">
+  <link rel="alternate" hreflang="fa" href="https://hadi-ashrafi.github.io/farn-studio/?lang=fa">
+
+  <!-- Styles first; fonts load without blocking the first paint -->
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Manrope:wght@400;500;600&family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Manrope:wght@400;500;600&family=Vazirmatn:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Manrope:wght@400;500;600&family=Vazirmatn:wght@400;500;600;700;800&display=swap"></noscript>
 </head>
 <body>
   <div class="ambient" aria-hidden="true"></div>
 
   <!-- ===== Header ===== -->
   <header class="header" id="header">
-    <div class="container"><div class="header-inner glass">
+    <div class="container"><div class="header-inner glass blur">
       <a href="#top" class="logo" aria-label="FARN Studio">
         <img src="assets/brand/farn-horizontal-reversed.svg" alt="FARN Studio" width="120" height="40">
       </a>
@@ -44,7 +57,7 @@
       </nav>
 
       <div class="header-actions">
-        <button class="lang js-lang hide-m" id="langToggle" type="button" aria-label="Change language">
+        <button class="lang js-lang" id="langToggle" type="button" aria-label="Change language">
           <span data-lang="en">EN</span><span data-lang="fa">فا</span>
         </button>
         <a href="#contact" class="btn-outline talk">
@@ -80,9 +93,9 @@
             </a>
           </div>
           <div class="hero-badges reveal">
-            <span class="glass"><i style="background:#a594ff"></i><b data-i18n="hero.b1">Full‑stack web</b></span>
-            <span class="glass"><i style="background:#ff8a5f"></i><b data-i18n="hero.b2">Brand identity</b></span>
-            <span class="glass"><i style="background:#62e3cb"></i><b data-i18n="hero.b3">Motion & YouTube</b></span>
+            <span class="glass"><i class="dot-violet"></i><b data-i18n="hero.b1">Full‑stack web</b></span>
+            <span class="glass"><i class="dot-coral"></i><b data-i18n="hero.b2">Brand identity</b></span>
+            <span class="glass"><i class="dot-rose"></i><b data-i18n="hero.b3">Motion & YouTube</b></span>
           </div>
         </div>
 
@@ -99,8 +112,8 @@
             <span class="sun"></span>
           </div>
           <span class="vtext" data-i18n="hero.vtext">FARN STUDIO — EST. 2026</span>
-          <span class="art-chip glass ac1"><span data-i18n="hero.c1">UI · Code · Launch</span><small data-i18n="hero.c1s">Pixel‑perfect, fast</small></span>
-          <span class="art-chip glass ac2"><span data-i18n="hero.c2">Brand that shines</span><small data-i18n="hero.c2s">Logo · Kit · Instagram</small></span>
+          <span class="art-chip blur ac1"><span data-i18n="hero.c1">UI · Code · Launch</span><small data-i18n="hero.c1s">Pixel‑perfect, fast</small></span>
+          <span class="art-chip blur ac2"><span data-i18n="hero.c2">Brand that shines</span><small data-i18n="hero.c2s">Logo · Kit · Instagram</small></span>
         </div>
       </div>
       <a href="#services" class="scroll-cue"><span class="cue-line"></span><span class="mouse"><i></i></span><span data-i18n="hero.scroll">Scroll down</span></a>
@@ -109,52 +122,40 @@
     <!-- ===== Services ===== -->
     <section class="section services-sec" id="services">
       <div class="container split">
-        <header class="split-head svc-dhead reveal">
+        <header class="split-head reveal">
           <p class="eyebrow" data-i18n="services.eyebrow">What we do</p>
           <h2 class="h2" data-i18n="services.title">Turning ideas into impactful solutions.</h2>
         </header>
-        <header class="svc-mhead reveal">
-          <div>
-            <p class="line-label"><span data-i18n="services.m.eyebrow">Services</span></p>
-            <h2 class="h2" data-i18n-html="services.m.title">What we <span class="accent">do</span></h2>
-          </div>
-          <a href="#pricing" class="view-all"><span data-i18n="services.viewAll">View all</span> <svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
-        </header>
-        <ol class="svc-list glass">
-          <li class="svc reveal">
+        <ol class="svc-list rail">
+          <li class="svc glass reveal">
             <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="24" height="16" rx="2"/><path d="M12 27h8M16 22v5"/></svg></span>
             <span class="num">01</span>
             <h3 data-i18n="svc.1">Digital Design</h3>
             <p data-i18n="svc.1d">UI/UX, landing pages, prototypes</p>
-            <span class="svc-go"><svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
           </li>
-          <li class="svc reveal">
+          <li class="svc glass reveal">
             <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M11 9 4 16l7 7M21 9l7 7-7 7"/></svg></span>
             <span class="num">02</span>
             <h3 data-i18n="svc.2">Full‑stack Development</h3>
             <p data-i18n="svc.2d">Websites, stores, web apps</p>
-            <span class="svc-go"><svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
           </li>
-          <li class="svc reveal">
+          <li class="svc glass reveal">
             <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2"/><rect x="18" y="5" width="9" height="9" rx="2"/><rect x="5" y="18" width="9" height="9" rx="2"/><circle cx="22.5" cy="22.5" r="4"/></svg></span>
             <span class="num">03</span>
             <h3 data-i18n="svc.3">Brand Identity</h3>
             <p data-i18n="svc.3d">Logo, guidelines, visual system</p>
-            <span class="svc-go"><svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
           </li>
-          <li class="svc reveal">
+          <li class="svc glass reveal">
             <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="5" width="22" height="22" rx="6"/><circle cx="16" cy="16" r="5"/><circle cx="22.5" cy="9.5" r=".8"/></svg></span>
             <span class="num">04</span>
             <h3 data-i18n="svc.4">Instagram Design</h3>
             <p data-i18n="svc.4d">Posts, stories, feed planning</p>
-            <span class="svc-go"><svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
           </li>
-          <li class="svc reveal">
+          <li class="svc glass reveal">
             <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 7v18l15-9z"/></svg></span>
             <span class="num">05</span>
             <h3 data-i18n="svc.5">Motion & Video</h3>
             <p data-i18n="svc.5d">Animation, explainers, YouTube</p>
-            <span class="svc-go"><svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
           </li>
         </ol>
       </div>
@@ -178,7 +179,7 @@
             <button class="round" id="nextWork" aria-label="Next"><svg viewBox="0 0 16 16" width="14" height="14"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
           </div>
         </header>
-        <div class="works" id="works"></div>
+        <div class="works rail" id="works"></div>
       </div>
     </section>
 
@@ -214,7 +215,7 @@
             <button class="chip" data-plan="motion" data-i18n="pricing.tab.motion">Motion</button>
           </div>
         </div>
-        <div class="plans" id="plans"></div>
+        <div class="plans rail" id="plans"></div>
         <div class="plans-dots" id="planDots" aria-hidden="true"></div>
         <p class="note" data-i18n="pricing.note">Prices are starting points. Final quote depends on scope.</p>
       </div>
@@ -246,7 +247,7 @@
           <p class="eyebrow" data-i18n="yt.eyebrow">On YouTube</p>
           <h2 class="h2" data-i18n-html="yt.title">Beyond<br>the screen.</h2>
         </div>
-        <div class="videos" id="videos"></div>
+        <div class="videos rail" id="videos"></div>
         <a class="subscribe glass" id="subLink" target="_blank" rel="noopener">
           <span data-i18n="yt.sub">Subscribe</span>
           <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z" fill="currentColor"/></svg>
@@ -309,7 +310,7 @@
 
   <footer class="footer">
     <div class="container"><div class="footer-inner glass">
-      <img src="assets/brand/farn-horizontal-reversed.svg" alt="FARN Studio" width="96" height="32">
+      <img src="assets/brand/farn-horizontal-reversed.svg" alt="FARN Studio" width="96" height="32" loading="lazy" decoding="async">
       <p>© <span id="year"></span> FARN Studio. <span data-i18n="footer.rights">All rights reserved.</span></p>
       <a class="f-phone" id="fPhoneLink"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span id="fPhoneText" dir="ltr"></span></a>
       <div class="socials">
@@ -346,8 +347,8 @@
     </div>
   </div>
 
-  <script src="js/config.js"></script>
-  <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
