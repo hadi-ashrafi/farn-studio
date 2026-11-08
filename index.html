@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>FARN Studio — Design, Develop, Create</title>
+  <meta name="description" content="FARN Studio is an independent studio for full‑stack websites, brand identity and motion.">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Icons: white + orange FARN mark (tab / search), black background for the installed web app -->
+  <link rel="icon" href="assets/brand/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/brand/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="FARN">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="application-name" content="FARN Studio">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Manrope:wght@400;500;600&family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="container"><div class="header-inner glass">
+      <a href="#top" class="logo" aria-label="FARN Studio">
+        <img src="assets/brand/farn-horizontal-reversed.svg" alt="FARN Studio" width="120" height="40">
+      </a>
+
+      <nav class="menu" id="menu" aria-label="Main">
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+        <a href="#studio" data-i18n="nav.studio">Studio</a>
+        <a href="#youtube" data-i18n="nav.youtube">YouTube</a>
+        <a href="#contact" class="menu-cta" data-i18n="nav.cta">Let's talk</a>
+        <div class="menu-lang"><small data-i18n="nav.lang">Language</small><button class="lang js-lang" type="button" aria-label="Change language"><span data-lang="en">EN</span><span data-lang="fa">فا</span></button></div>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang js-lang hide-m" id="langToggle" type="button" aria-label="Change language">
+          <span data-lang="en">EN</span><span data-lang="fa">فا</span>
+        </button>
+        <a href="#contact" class="btn-outline talk">
+          <span data-i18n="nav.cta">Let's talk</span>
+          <svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        </a>
+        <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+      </div>
+    </div></div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">Independent digital & creative studio</p>
+          <h1 class="hero-title reveal">
+            <span data-i18n="hero.l1">We Design.</span>
+            <span data-i18n="hero.l2">We Develop.</span>
+            <span class="accent" data-i18n="hero.l3">We Create.</span>
+          </h1>
+          <p class="hero-sub reveal" data-i18n="hero.sub">Websites, brands and motion that make your business impossible to ignore.</p>
+          <div class="hero-ctas reveal">
+            <a href="#work" class="btn btn-accent">
+              <span data-i18n="hero.cta1">Explore our work</span>
+              <svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </a>
+            <a href="#contact" class="link-line">
+              <span data-i18n="hero.cta2">Start a project</span>
+              <svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </a>
+          </div>
+          <div class="hero-badges reveal">
+            <span class="glass"><i style="background:#a594ff"></i><b data-i18n="hero.b1">Full‑stack web</b></span>
+            <span class="glass"><i style="background:#ff8a5f"></i><b data-i18n="hero.b2">Brand identity</b></span>
+            <span class="glass"><i style="background:#62e3cb"></i><b data-i18n="hero.b3">Motion & YouTube</b></span>
+          </div>
+        </div>
+
+        <!-- Brand visual: the FARN grid + sun, with orbit lines -->
+        <div class="hero-art" aria-hidden="true">
+          <span class="glow g1"></span><span class="glow g2"></span><span class="glow g3"></span>
+          <div class="orbit o1"><i class="star"></i></div>
+          <div class="orbit o2"></div>
+          <div class="fgrid">
+            <span class="sq q1"></span>
+            <span class="sq q2"></span>
+            <span class="sq q3"></span>
+            <span class="sq q4"></span>
+            <span class="sun"></span>
+          </div>
+          <span class="vtext" data-i18n="hero.vtext">FARN STUDIO — EST. 2026</span>
+          <span class="art-chip glass ac1"><span data-i18n="hero.c1">UI · Code · Launch</span><small data-i18n="hero.c1s">Pixel‑perfect, fast</small></span>
+          <span class="art-chip glass ac2"><span data-i18n="hero.c2">Brand that shines</span><small data-i18n="hero.c2s">Logo · Kit · Instagram</small></span>
+        </div>
+      </div>
+      <a href="#services" class="scroll-cue"><span class="cue-line"></span><span class="mouse"><i></i></span><span data-i18n="hero.scroll">Scroll down</span></a>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="section services-sec" id="services">
+      <div class="container split">
+        <header class="split-head svc-dhead reveal">
+          <p class="eyebrow" data-i18n="services.eyebrow">What we do</p>
+          <h2 class="h2" data-i18n="services.title">Turning ideas into impactful solutions.</h2>
+        </header>
+        <header class="svc-mhead reveal">
+          <div>
+            <p class="line-label"><span data-i18n="services.m.eyebrow">Services</span></p>
+            <h2 class="h2" data-i18n-html="services.m.title">What we <span class="accent">do</span></h2>
+          </div>
+          <a href="#pricing" class="view-all"><span data-i18n="services.viewAll">View all</span> <svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+        </header>
+        <ol class="svc-list glass">
+          <li class="svc reveal">
+            <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="6" width="24" height="16" rx="2"/><path d="M12 27h8M16 22v5"/></svg></span>
+            <span class="num">01</span>
+            <h3 data-i18n="svc.1">Digital Design</h3>
+            <p data-i18n="svc.1d">UI/UX, landing pages, prototypes</p>
+            <span class="svc-go"><svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+          </li>
+          <li class="svc reveal">
+            <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M11 9 4 16l7 7M21 9l7 7-7 7"/></svg></span>
+            <span class="num">02</span>
+            <h3 data-i18n="svc.2">Full‑stack Development</h3>
+            <p data-i18n="svc.2d">Websites, stores, web apps</p>
+            <span class="svc-go"><svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+          </li>
+          <li class="svc reveal">
+            <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2"/><rect x="18" y="5" width="9" height="9" rx="2"/><rect x="5" y="18" width="9" height="9" rx="2"/><circle cx="22.5" cy="22.5" r="4"/></svg></span>
+            <span class="num">03</span>
+            <h3 data-i18n="svc.3">Brand Identity</h3>
+            <p data-i18n="svc.3d">Logo, guidelines, visual system</p>
+            <span class="svc-go"><svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+          </li>
+          <li class="svc reveal">
+            <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="5" width="22" height="22" rx="6"/><circle cx="16" cy="16" r="5"/><circle cx="22.5" cy="9.5" r=".8"/></svg></span>
+            <span class="num">04</span>
+            <h3 data-i18n="svc.4">Instagram Design</h3>
+            <p data-i18n="svc.4d">Posts, stories, feed planning</p>
+            <span class="svc-go"><svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+          </li>
+          <li class="svc reveal">
+            <span class="ic"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 7v18l15-9z"/></svg></span>
+            <span class="num">05</span>
+            <h3 data-i18n="svc.5">Motion & Video</h3>
+            <p data-i18n="svc.5d">Animation, explainers, YouTube</p>
+            <span class="svc-go"><svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Selected works ===== -->
+    <section class="section" id="work">
+      <div class="container split">
+        <header class="split-head reveal">
+          <p class="eyebrow" data-i18n="work.eyebrow">Selected works</p>
+          <h2 class="h2" data-i18n-html="work.title">Ideas.<br>In action.</h2>
+          <p class="muted" data-i18n="work.sub">Our websites open live — click a project to try it on desktop, tablet or mobile.</p>
+          <div class="filters" id="filters" role="tablist">
+            <button class="chip on" data-filter="all" data-i18n="work.f.all">All</button>
+            <button class="chip" data-filter="web" data-i18n="work.f.web">Web</button>
+            <button class="chip" data-filter="brand" data-i18n="work.f.brand">Brand</button>
+            <button class="chip" data-filter="motion" data-i18n="work.f.motion">Motion</button>
+          </div>
+          <div class="slider-nav">
+            <button class="round" id="prevWork" aria-label="Previous"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+            <button class="round" id="nextWork" aria-label="Next"><svg viewBox="0 0 16 16" width="14" height="14"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+          </div>
+        </header>
+        <div class="works" id="works"></div>
+      </div>
+    </section>
+
+    <!-- ===== Motion band ===== -->
+    <section class="section" id="motion"><div class="container"><div class="motion-band glass">
+      <a class="mb-art" id="mbArt" target="_blank" rel="noopener" aria-label="YouTube">
+        <span class="mb-sun"></span>
+        <span class="mb-sq s1"></span><span class="mb-sq s2"></span><span class="mb-sq s3"></span><span class="mb-sq s4"></span><span class="mb-sq s5"></span>
+        <span class="play-btn"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+      </a>
+      <div class="mb-copy reveal">
+        <p class="eyebrow" data-i18n="motion.eyebrow">Motion playground</p>
+        <h2 class="h2" data-i18n-html="motion.title">A world <span class="accent">in motion.</span></h2>
+        <p class="muted" data-i18n="motion.sub">Animations, stories and visual experiments for brands and our YouTube channel.</p>
+        <a class="link-line" id="mbLink" target="_blank" rel="noopener">
+          <span data-i18n="motion.cta">Watch more</span>
+          <svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        </a>
+      </div>
+    </div></div></section>
+
+    <!-- ===== Pricing ===== -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="pricing-head reveal">
+          <div>
+            <p class="eyebrow" data-i18n="pricing.eyebrow">Plans & pricing</p>
+            <h2 class="h2" data-i18n-html="pricing.title">Clear plans. <span class="accent">No surprises.</span></h2>
+          </div>
+          <div class="tabs" id="planTabs" role="tablist">
+            <button class="chip on" data-plan="web" data-i18n="pricing.tab.web">Website</button>
+            <button class="chip" data-plan="brand" data-i18n="pricing.tab.brand">Branding</button>
+            <button class="chip" data-plan="motion" data-i18n="pricing.tab.motion">Motion</button>
+          </div>
+        </div>
+        <div class="plans" id="plans"></div>
+        <div class="plans-dots" id="planDots" aria-hidden="true"></div>
+        <p class="note" data-i18n="pricing.note">Prices are starting points. Final quote depends on scope.</p>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section about" id="studio">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">About FARN</p>
+          <h2 class="h2" data-i18n-html="about.title">We turn ideas into digital <span class="accent">experiences.</span></h2>
+        </div>
+        <div class="about-text reveal">
+          <p data-i18n="about.p1">FARN is an independent creative studio for design, development and visual storytelling.</p>
+          <p data-i18n="about.p2">“Farn” is the old Persian word for glory — the light that sets a brand apart. That's what we build.</p>
+          <a href="#contact" class="btn-outline"><span data-i18n="about.cta">Work with us</span>
+            <svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+        </div>
+        <div class="about-art glass reveal" aria-hidden="true">
+          <div class="pattern" id="pattern"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== YouTube ===== -->
+    <section class="section yt-sec" id="youtube">
+      <div class="container yt-grid">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="yt.eyebrow">On YouTube</p>
+          <h2 class="h2" data-i18n-html="yt.title">Beyond<br>the screen.</h2>
+        </div>
+        <div class="videos" id="videos"></div>
+        <a class="subscribe glass" id="subLink" target="_blank" rel="noopener">
+          <span data-i18n="yt.sub">Subscribe</span>
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact-sec" id="contact">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2 class="cta-title">
+            <span data-i18n="cta.l1">Have an idea?</span>
+            <span class="accent" data-i18n="cta.l2">Let's make it real.</span>
+          </h2>
+          <span class="cta-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info glass reveal">
+            <p class="muted" data-i18n="contact.sub">Tell us about your business and what you need. We reply within 24 hours.</p>
+            <ul class="c-links">
+              <li><a id="phoneLink"><small data-i18n="contact.phone">Phone</small><span id="phoneText" dir="ltr"></span></a></li>
+              <li><a id="emailLink"><small data-i18n="contact.email">Email</small><span id="emailText" dir="ltr"></span></a></li>
+              <li><a id="igLink" target="_blank" rel="noopener"><small data-i18n="contact.ig">Instagram</small><span id="igText" dir="ltr"></span></a></li>
+              <li><a id="ytLink" target="_blank" rel="noopener"><small data-i18n="contact.yt">YouTube</small><span id="ytText" dir="ltr"></span></a></li>
+            </ul>
+          </div>
+
+          <form class="form glass reveal" id="contactForm" novalidate>
+            <div class="row2">
+              <label class="field"><span><b data-i18n="contact.f.name">Your name</b> <em class="req">*</em></span><input id="f-name" type="text" autocomplete="name" required></label>
+              <label class="field"><span><b data-i18n="contact.f.phone">Mobile number</b> <em class="req">*</em></span><input id="f-phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="0912 345 6789" required></label>
+            </div>
+            <label class="field"><span><b data-i18n="contact.f.email">Email</b> <i class="opt" data-i18n="contact.f.optional">(optional)</i></span><input id="f-email" type="email" autocomplete="email" dir="ltr" placeholder="name@example.com"></label>
+
+            <div class="field">
+              <span id="planLabel" data-i18n="contact.f.plan">Plan</span>
+              <div class="dd" id="planDD">
+                <button type="button" class="dd-btn" id="planBtn" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="planLabel planBtn">
+                  <span class="dd-val" id="planValue"></span>
+                  <svg class="dd-chev" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <ul class="dd-list" id="planList" role="listbox" tabindex="-1" aria-labelledby="planLabel"></ul>
+              </div>
+              <input type="hidden" id="f-plan" name="plan" value="custom">
+            </div>
+
+            <label class="field"><span><b data-i18n="contact.f.msg">About your project</b></span><textarea id="f-msg" rows="4"></textarea></label>
+            <button class="btn btn-accent" type="submit">
+              <span data-i18n="contact.f.send">Start a project</span>
+              <svg class="ar" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+            </button>
+            <p class="form-msg" id="formMsg" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><div class="footer-inner glass">
+      <img src="assets/brand/farn-horizontal-reversed.svg" alt="FARN Studio" width="96" height="32">
+      <p>© <span id="year"></span> FARN Studio. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <a class="f-phone" id="fPhoneLink"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span id="fPhoneText" dir="ltr"></span></a>
+      <div class="socials">
+        <a id="fYt" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z" fill="currentColor"/></svg></a>
+        <a id="fIg" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg></a>
+        <a id="fMail" aria-label="Email"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></a>
+      </div>
+    </div></div>
+  </footer>
+
+  <!-- ===== Live project viewer ===== -->
+  <div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-labelledby="viewerTitle" hidden>
+    <div class="viewer-backdrop" data-close></div>
+    <div class="viewer-panel">
+      <div class="viewer-bar">
+        <h3 id="viewerTitle"></h3>
+        <span class="v-url" id="viewerUrl" dir="ltr"></span>
+        <div class="devices" id="devices">
+          <button class="dev on" data-dev="desktop" aria-label="Desktop"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></button>
+          <button class="dev" data-dev="tablet" aria-label="Tablet"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/></svg></button>
+          <button class="dev" data-dev="mobile" aria-label="Mobile"><svg viewBox="0 0 24 24"><rect x="8" y="3" width="8" height="18" rx="2"/></svg></button>
+        </div>
+        <a class="icon-btn" id="viewerRepo" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a>
+        <a class="icon-btn" id="viewerOpen" target="_blank" rel="noopener" aria-label="Open in new tab"><svg viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        <button class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <div class="viewer-stage">
+        <div class="frame-wrap" id="frameWrap" data-dev="desktop">
+          <div class="frame-loader"></div>
+          <iframe id="viewerFrame" title="Project preview" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+        </div>
+        <p class="frame-hint" data-i18n="viewer.hint">Preview blank? Some sites block embedding — use “open in new tab”.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
