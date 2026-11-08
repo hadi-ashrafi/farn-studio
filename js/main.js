@@ -75,6 +75,11 @@
   }
   burger.addEventListener("click", function () { setMenu(burger.getAttribute("aria-expanded") !== "true"); });
   $$("a", menu).forEach(function (a) { a.addEventListener("click", function () { setMenu(false); }); });
+  // tap/click anywhere outside the open menu closes it
+  document.addEventListener("click", function (e) {
+    if (burger.getAttribute("aria-expanded") === "true" && !menu.contains(e.target) && !burger.contains(e.target)) setMenu(false);
+  });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && burger.getAttribute("aria-expanded") === "true") { setMenu(false); burger.focus(); } });
 
   /* ================= reveal ================= */
   if ("IntersectionObserver" in window) {
@@ -184,13 +189,7 @@
     $$(".wcard", works).forEach(function (c) { c.classList.toggle("hide", filter !== "all" && c.getAttribute("data-cat") !== filter); });
     works.scrollLeft = 0;
   });
-  function slide(dir) {
-    var card = $(".wcard:not(.hide)", works); if (!card) return;
-    var step = (card.offsetWidth + 14) * (root.dir === "rtl" ? -dir : dir);
-    if (works.scrollBy) works.scrollBy({ left: step, behavior: "smooth" }); else works.scrollLeft += step;
-  }
-  $("#prevWork").addEventListener("click", function () { slide(-1); });
-  $("#nextWork").addEventListener("click", function () { slide(1); });
+
 
   works.addEventListener("click", function (e) {
     var c = e.target.closest(".wcard");

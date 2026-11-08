@@ -23,7 +23,7 @@
   --violet: #8f7cff;
   --sky: #6aa8ff;
   --accent-soft: #ffa98a;
-  --grad: linear-gradient(95deg, #ff8a52 0%, #ff5c8a 52%, #9a82ff 100%);
+  --grad: linear-gradient(100deg, #ff8150 0%, #ff5c8a 100%);
   --grad-btn: linear-gradient(100deg, #ff8150 0%, #ff5c8a 100%);
 
   --glass-fill: linear-gradient(150deg, rgba(255,255,255,.095), rgba(255,255,255,.03));

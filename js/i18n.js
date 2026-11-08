@@ -35,7 +35,7 @@ window.FARN_I18N = {
     "svc.5": "Motion & Video", "svc.5d": "Animation, explainers, YouTube",
 
     "work.eyebrow": "Selected works",
-    "work.title": "Ideas.<br>In action.",
+    "work.title": "Ideas in action.",
     "work.sub": "Our websites open live — click a project to try it on desktop, tablet or mobile.",
     "work.f.all": "All", "work.f.web": "Web", "work.f.brand": "Brand", "work.f.motion": "Motion",
     "work.cat.web": "Web", "work.cat.brand": "Branding", "work.cat.motion": "Motion",
@@ -65,7 +65,7 @@ window.FARN_I18N = {
     "about.cta": "Work with us",
 
     "yt.eyebrow": "On YouTube",
-    "yt.title": "Beyond<br>the screen.",
+    "yt.title": "Beyond the screen.",
     "yt.sub": "Subscribe",
 
     "cta.l1": "Have an idea?",
@@ -104,7 +104,7 @@ window.FARN_I18N = {
     "hero.l1": "طراحی می‌کنیم.",
     "hero.l2": "توسعه می‌دهیم.",
     "hero.l3": "خلق می‌کنیم.",
-    "hero.sub": "از وب‌سایت فول‌استک تا هویت برند و موشن؛ هر چیزی که کسب‌وکار شما برای دیده شدن و ماندگار شدن لازم دارد، یک‌جا.",
+    "hero.sub": "از وب‌سایت فول‌استک تا هویت برند؛ هر چیزی که کسب‌وکار شما برای دیده شدن و ماندگار شدن لازم دارد.",
     "hero.cta1": "دیدن نمونه‌کارها",
     "hero.cta2": "شروع پروژه",
     "hero.scroll": "اسکرول کنید",
@@ -126,7 +126,7 @@ window.FARN_I18N = {
     "svc.5": "موشن و ویدیو", "svc.5d": "انیمیشن، موشن‌گرافیک، یوتیوب",
 
     "work.eyebrow": "نمونه‌کارهای منتخب",
-    "work.title": "ایده‌ها<br>در عمل.",
+    "work.title": "ایده‌ها در عمل.",
     "work.sub": "سایت‌ها همین‌جا و به‌صورت زنده باز می‌شوند؛ روی هر پروژه بزنید و آن را در دسکتاپ، تبلت یا موبایل امتحان کنید.",
     "work.f.all": "همه", "work.f.web": "وب", "work.f.brand": "برند", "work.f.motion": "موشن",
     "work.cat.web": "وب", "work.cat.brand": "برندینگ", "work.cat.motion": "موشن",
@@ -158,7 +158,7 @@ window.FARN_I18N = {
     "about.cta": "همکاری با ما",
 
     "yt.eyebrow": "در یوتیوب",
-    "yt.title": "فراتر<br>از قاب.",
+    "yt.title": "فراتر از قاب.",
     "yt.sub": "سابسکرایب",
 
     "cta.l1": "ایده‌ای دارید؟",
